@@ -10,3 +10,5 @@ class Recipe(models.Model):
         return self.name
 
 
+
+
