@@ -12,6 +12,12 @@ angular.module('myApp.recipeDetail', ['ngRoute'])
     .controller('RecipeDetailCtrl', ['$scope', '$routeParams', '$location', 'Restangular', function($scope, $routeParams, $location, Restangular) {
         $scope.recipeId = $routeParams.recipeId;
 
+        $scope.editing = false;
+
+        $scope.listRecipe = function(){
+            $location.path('/recipes');
+        };
+
         Restangular.one('recipes', $scope.recipeId).customGET().then(function (recipe) {
             $scope.recipe = recipe;
         });
