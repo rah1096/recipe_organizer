@@ -11,7 +11,16 @@
 
 <br>
 <center>
-    <button class="btn btn-sm btn-danger glyphicon glyphicon-trash" ng-click="deleteRecipe()"> Delete Recipe</button>
-    <button class="btn btn-sm btn-info glyphicon glyphicon-pencil" ng-click="editing=!editing"> Edit Recipe</button>
-    <button class="btn btn-sm btn-warning glyphicon glyphicon-book" ng-click="listRecipe()"> Recipe List</button>
+    <button class="btn btn-sm btn-danger glyphicon glyphicon-trash"
+            ng-click="deleteRecipe()"> Delete Recipe</button>
+
+    <button class="btn btn-sm btn-info glyphicon glyphicon-pencil"
+            ng-click="editing=!editing"
+            ng-hide="editing"> Edit Recipe</button>
+
+    <button class="btn btn-sm btn-success glyphicon glyphicon-floppy-disk"
+            ng-click="saveEditedRecipe()"> Save</button>
+
+    <button class="btn btn-sm btn-warning glyphicon glyphicon-book"
+            ng-click="listRecipe()"> Recipe List</button>
 </center>
