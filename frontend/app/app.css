@@ -28,3 +28,16 @@
   content: "";
   padding: 0;
 }
+
+body {
+    text-align: center;
+
+}
+
+.site-background {
+    background-image: url("images/purty_wood.png");
+}
+
+.site-foreground {
+    background-color: #ffffff;
+}

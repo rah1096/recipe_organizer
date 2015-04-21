@@ -1,6 +1,10 @@
-<ul>
-    <li ng-repeat="recipe in recipes"><a href="#/recipes/{{ recipe.id }}"> {{ recipe.name }}</a></li>
+<input ng-model="searchText.name">
 
-</ul>
+<div ng-repeat="recipe in recipes | filter:searchText">
+    <p><a href="#/recipes/{{ recipe.id }}">{{ recipe.name }}</a></p>
+    <img width="200"
+         class="img-responsive"
+         ng-src="{{ recipe.photo }}">
+</div>
 
 
