@@ -31,7 +31,11 @@
 
 body {
     text-align: center;
-
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
 }
 
 .site-background {
@@ -39,5 +43,39 @@ body {
 }
 
 .site-foreground {
-    background-color: #ffffff;
+    background-color: #dddddd;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
+.recipe-card {
+    border-radius: 5px;
+    padding: inherit;
+    padding-top: 1px;
+    margin-top: 30px;
+
+}
+.recipe-card-image {
+    width: 100%;
+    padding: 0px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.transparent {
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.65);
+}
+
+.container {
+    height: 315px;
+    width: 600px;
+    position: relative;
+    margin-top: 10px;
+
 }

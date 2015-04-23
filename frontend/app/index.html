@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My AngularJS App</title>
+    <title>My Recipes</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
@@ -16,25 +16,57 @@
     <link rel="stylesheet" href="app.css">
     <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
+
 <body>
-<ul class="menu">
-    <li><a href="#/recipes">List of Recipes</a></li>
-    <li><a href="#/add-recipe">Add Recipe</a></li>
-</ul>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/recipes">List of Recipes</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/add-recipe">Add Recipe <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input ng-model="searchText.name">
+            <!--<div ng-repeat="recipe in recipes | filter:searchText"> {{ recipe.name }} </div>
+            <button type="submit" class="btn btn-default">Submit</button>-->
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
 <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+
   <![endif]-->
 
 <div class="site-background">
+
   <div class="container-fluid">
       <div ng-view
-           class="col-sm-8 col-sm-offset-2 site-foreground">
+           class="col-sm-8 col-sm-offset-2">
+
       </div>
   </div>
 </div>
 
-</div>
+
+
 
 <div></div>
 
@@ -47,6 +79,8 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/lodash/lodash.min.js"></script>
     <script src="bower_components/restangular/dist/restangular.min.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
     <script src="recipes/recipes.js"></script>
     <script src="recipe-detail/recipeDetail.js"></script>

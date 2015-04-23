@@ -14,3 +14,4 @@ angular.module('myApp.recipes', ['ngRoute'])
             $scope.recipes = recipes;
         })
     }]);
+
