@@ -79,20 +79,3 @@ body {
     margin-top: 10px;
 
 }
-
-.clipping-frame {
-	border: 10px solid #fff;
-	border-radius: 50%;
-	box-shadow: 0 0 10px rgba(0,0,0,.15);
-	overflow: hidden;
-	display:block;
-	width: 600px;
-	height: 315px;
-	margin:20px auto;
-}
-.clipping-frame img {
-	-webkit-transition: 3s;
-	transition: 3s;
-	margin-left: 0px;
-}
-.clipping-frame img:hover {margin-left:-480px;cursor:pointer;}
