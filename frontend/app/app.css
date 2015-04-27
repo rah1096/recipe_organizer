@@ -72,10 +72,17 @@ body {
   background:rgba(255,255,255,0.65);
 }
 
-.container {
-    height: 315px;
-    width: 600px;
-    position: relative;
-    margin-top: 10px;
-
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
 }
