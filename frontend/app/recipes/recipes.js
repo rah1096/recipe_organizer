@@ -12,6 +12,22 @@ angular.module('myApp.recipes', ['ngRoute'])
     .controller('RecipesCtrl', ['$scope', 'Restangular', function ($scope, Restangular) {
         Restangular.all('recipes').getList().then(function (recipes) {
             $scope.recipes = recipes;
-        })
-    }]);
+        });
 
+        $scope.myInterval = 3000;
+        $scope.slides = [
+        {
+          image: 'images/1.jpg'
+        },
+        {
+          image: 'images/2.jpg'
+        },
+        {
+          image: 'images/3.jpg'
+        },
+        {
+          image: 'images/4.jpg'
+        }
+        ];
+
+    }]);

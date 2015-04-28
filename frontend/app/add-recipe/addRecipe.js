@@ -13,7 +13,7 @@ angular.module('myApp.addRecipe', ['ngRoute'])
 
         $scope.recipe = {
             ingredients: []
-        }
+        };
 
         $scope.addIngredientToRecipe = function (ingredientName) {
             if (ingredientName != null) {
