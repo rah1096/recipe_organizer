@@ -17,16 +17,16 @@ angular.module('myApp.recipes', ['ngRoute'])
         $scope.myInterval = 3000;
         $scope.slides = [
         {
-          image: 'http://lorempixel.com/400/200/'
+          image: 'images/1.jpg'
         },
         {
-          image: 'http://lorempixel.com/400/200/food'
+          image: 'images/2.jpg'
         },
         {
-          image: 'http://lorempixel.com/400/200/sports'
+          image: 'images/3.jpg'
         },
         {
-          image: 'http://lorempixel.com/400/200/people'
+          image: 'images/4.jpg'
         }
         ];
 

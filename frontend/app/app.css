@@ -55,9 +55,10 @@ body {
 
 .recipe-card {
     border-radius: 5px;
-    padding: inherit;
+    padding: 10%;
     padding-top: 1px;
     margin-top: 30px;
+    margin-bottom: auto;
 
 }
 .recipe-card-image {
@@ -72,17 +73,25 @@ body {
   background:rgba(255,255,255,0.65);
 }
 
-#slides_control > div{
-  height: 200px;
+.carousel {
+  position: relative;
+  max-height: 380px;
+  max-width: 600px;
+  margin: auto;
 }
-img{
-  margin:auto;
-  width: 400px;
+
+.carousel .item {
+  background-color: #777777;
+  width: 100%;
+  height: 380px;
+
 }
-#slides_control {
-  position:absolute;
-  width: 400px;
-  left:50%;
-  top:20px;
- margin-left:-200px;
+
+.carousel-inner > .item > img {
+  float: inherit;
+  display: block;
+  margin-top: 0px;
+  height: auto;
+  top: 0;
+  position: absolute;
 }

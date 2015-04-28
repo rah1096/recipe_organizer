@@ -2,30 +2,24 @@
 
 <!--<li ng-repeat="recipe in recipes | filter:searchText></li>-->
 
-<div style="height: 305px">
-  <carousel interval="myInterval">
-    <slide ng-repeat="slide in slides" active="slide.active">
-      <img ng-src="{{slide.image}}" style="margin:auto;">
-      <div class="carousel-caption">
-        <h4>Slide {{$index+1}}</h4>
-      </div>
+<div style="col-sm-6 col-md-4">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto; height:100%; width:100%;" />
     </slide>
-  </carousel>
+</carousel>
 </div>
 
 
 
-<div class="col-sm-6 col-md-4" ng-repeat="recipe in recipes">
+<div class="col-sm-6 col-md-4" style="height:50%; width:50%;" ng-repeat="recipe in recipes">
     <div class="recipe-card transparent">
         <h3><a href="#/recipes/{{ recipe.id }}">{{ recipe.name }}</a></h3>
         <img width="200"
              class="img-responsive recipe-card-image"
              ng-src="{{ recipe.photo }}">
         <p>{{ recipe.description }}</p>
-
-
      </div>
-
 </div>
 
 
